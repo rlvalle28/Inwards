@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+h1 {
+    font-family: 'hanken';
+    font-size: 60px;
+    font-weight: 700;
+    color: #79D97C;
+}
+h2 {
+    font-family: 'hanken';
+    font-size: 45px;
+    font: 500;
+    color: #000;
+}
+h4 {
+    font-family: 'hanken';
+    font-size: 35px;
+    font-weight: 400;
+    color: #000;
+}
+p {
+    font-family: 'hanken';
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+}
+.container {
+    max-width: 1920px;
+}
+/* banner section */
+#banner-scction {
+    background: #DBEDEF;
+    padding: 50px 20px;
+}
+
+/* what is inward managed section */
+#whatIsInwardSection,
+#feature-benefitsSection,
+#plan-pricing-section {
+    padding: 50px 200px;
+}
+
+/* examples Section */
+#examplesSection,
+#footer {
+    background: #DBEDEF;
+    padding: 50px 200px;
+}
+/* feature and benefits Section */
+#feature-benefitsSection .card {
+    background: #00635B;
+    border: 8px solid #00635B;
+    border-radius: 15px;
+    color: #fff;
+}
+#feature-benefitsSection .card p {
+    color: #fff;
+}
+#feature-benefitsSection .card:nth-child(7) {
+    background: #79D97C;
+    border: 8px solid #79D97C;
+}
+#feature-benefitsSection .card h2 {
+    color: #000;
+}
+.card.last-column {
+    padding: 50px 100px;
+}
+.card.last-column p {
+    color: #000 !important;
+    text-align: center;
+}
+/* Plan & Pricing Section */
+#plan-pricing-section p {
+    width: 50%;
+    text-align: center;
+}
+#plan-pricing-section .plan-title {
+    background-image: url('plan-image.png');
+}
+/* footer section */
+.foot-child2 i {
+    font-size: 30px;
+}
+
