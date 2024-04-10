@@ -1,27 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+@font-face {
+    font-family: 'Hanken Grotesk';
+    font-weight: 400;
+    src: url(../fonts/HankenGrotesk-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Hanken Grotesk';
+    font-weight: 500;
+    src: url(../fonts/HankenGrotesk-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Hanken Grotesk';
+    font-weight: 600;
+    src: url(../fonts/HankenGrotesk-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Hanken Grotesk';
+    font-weight: 700;
+    src: url(../fonts/HankenGrotesk-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Hanken Grotesk';
+    font-weight: 900;
+    src: url(../fonts/HankenGrotesk-Black.ttf);
+}
+
+
+
 
 
 h1 {
-    font-family: 'hanken';
-    font-size: 60px;
+    font-family: 'Hanken Grotesk';
+    font-size: 100px;
     font-weight: 700;
     color: #79D97C;
 }
 h2 {
-    font-family: 'hanken';
-    font-size: 45px;
-    font: 500;
+    font-family: 'Hanken Grotesk';
+    font-size: 65px;
+    font: 600;
     color: #000;
 }
 h4 {
-    font-family: 'hanken';
+    font-family: 'Hanken Grotesk';
     font-size: 35px;
     font-weight: 400;
     color: #000;
 }
 p {
-    font-family: 'hanken';
-    font-size: 18px;
+    font-family: 'Hanken Grotesk';
+    font-size: 25px;
     font-weight: 400;
     color: #000;
 }
@@ -38,7 +72,41 @@ p {
 #whatIsInwardSection,
 #feature-benefitsSection,
 #plan-pricing-section {
-    padding: 50px 200px;
+    padding: 50px 20px;
+}
+
+.feature-benefits-cards{
+    padding-top: 40px;
+    gap:80px;
+}
+
+.sec-items{
+    flex:1;
+}
+
+.sec-items img{
+    width:100%;
+}
+
+.card{
+    padding:40px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.card-title{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Hanken Grotesk';
+    margin:0!important;
+}
+
+.card-body img {
+    width:70px;
 }
 
 /* examples Section */
@@ -63,6 +131,8 @@ p {
 }
 #feature-benefitsSection .card h2 {
     color: #000;
+    font-size: 60px!important;
+    font-weight: 600!important;
 }
 .card.last-column {
     padding: 50px 100px;
@@ -73,8 +143,13 @@ p {
 }
 /* Plan & Pricing Section */
 #plan-pricing-section p {
-    width: 50%;
+    width: 80%;
     text-align: center;
+    font-family: 'Hanken Grotesk';
+    font-size: 25px;
+    font-weight: 400;
+    color: #000;
+
 }
 #plan-pricing-section .plan-title {
     background-image: url('plan-image.png');
@@ -84,3 +159,108 @@ p {
     font-size: 30px;
 }
 
+.btn.btn-success{
+    background-color: #00635B;
+    padding:15px 20px;
+    text-align: center;
+    width:250px;
+    border-radius:5px;
+    color:#fff;
+    font-size: 25px!important;
+    font-family: 'Hanken Grotesk';
+}
+
+
+
+.plan-pricing-container{
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    gap:80px;
+    align-items: self-start;
+    margin-top: 50px;
+}
+
+.plan-card{
+    overflow: hidden;
+    border-radius:20px;
+    box-shadow: 0px 0px 5px #0000003a;
+}
+
+.plan-title{
+    background-size:contain;
+    background-position:top center;
+    background-repeat: no-repeat;
+    height: 350px;
+    padding:40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plan-title h2{
+    text-align: center;
+    font-family: 'Hanken Grotesk';
+    font-size:60px;
+    line-height: 1em;
+    font-weight: 900;
+}
+
+.plan-title p{
+    text-align: center!important;
+    font-family: 'Hanken Grotesk'!important;
+    font-size:25px!important;
+    line-height: 1em!important;
+    font-weight: 900!important;
+}
+
+.top-list{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    padding-bottom:30px;
+}
+
+
+.content-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:30px;
+    height: auto;
+    min-height: 400px;
+    align-items: center;
+}
+
+.card-item-list{
+    display: flex;
+    gap:20px;
+}
+
+.card-item-list img{
+    width:30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.card-item-list p{
+   margin: 0px!important;
+   font-size:20px!important;
+   line-height: 1.5em!important;
+   text-align: left!important;
+}
+
+.btn-start{
+    text-align: center!important;
+    font-family: 'Hanken Grotesk'!important;
+    font-size:25px!important;
+    line-height: 1em!important;
+    font-weight: 900!important;
+    color:#000;
+    width:100%;
+    padding:20px;
+    text-decoration: none;
+    background-color:#79D97C;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
